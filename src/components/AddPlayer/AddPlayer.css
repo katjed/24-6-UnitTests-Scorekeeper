@@ -1,0 +1,11 @@
+.AddPlayer {
+	margin: 40px 0 30px 30px;
+}
+
+.AddPlayer__submit {
+	margin-left: 20px;
+}
+
+.AddPlayer__submit:hover {
+	cursor: pointer;
+}

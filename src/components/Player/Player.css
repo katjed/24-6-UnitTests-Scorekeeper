@@ -1,0 +1,25 @@
+.Player {
+	margin: 20px 0 20px 30px;
+}
+
+.Player__name {
+	display: block;
+	margin: 5px 0;
+	font-size: 20px;
+}
+
+.Player__score {
+	margin: 5px 10px 5px 0;
+}
+
+.Player__button {
+	margin: 5px;
+
+}
+.Player__button:hover {
+	cursor: pointer;
+}
+
+.delete {
+	margin: 5px 0 5px 10px;
+}
