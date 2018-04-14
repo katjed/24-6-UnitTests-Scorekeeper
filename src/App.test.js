@@ -40,3 +40,17 @@ it('checks player name, new player score and number of players', () => {
   	expect(players[0].score).toEqual(0);
 });
 
+it('checks number of players after remove one', () => {
+  	const appComponent = mount(<App />);  
+
+  	const onPlayerAdd = appComponent.find(AddPlayer).prop('onPlayerAdd');
+  	onPlayerAdd('Robert');
+  	onPlayerAdd('Ola');
+
+  	const onPlayerRemove = appComponent.find(PlayersList).prop('onPlayerRemove');
+  	onPlayerRemove('Robert');
+
+  	const players = appComponent.state('players');
+
+  	expect(players.length).toEqual(1);
+});
